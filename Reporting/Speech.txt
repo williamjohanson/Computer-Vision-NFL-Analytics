@@ -1,0 +1,37 @@
+I investigated using computer vision to identify American football formations and plays.
+
+The big picture goal was to provide a means to glean game critical data without manual labour.
+THe goal was to determine the field lines and identify the Line of Scrimmage, offensive and defensive players 
+and then output the data in a means that the end user can begin critical analysis of the data.
+
+The algorithms for the 
+Field Lines/ LOS Detection  was the
+Probabilistic Hough (HUFF) Line Transforms, canny Edge filtering, Gaussian blur and grayscaling of the image.
+
+The algorithms for the player Detection used
+Colour Thresholding.
+L*a*b* colour space conversion.
+Morphology
+Adaptive thresholding.
+Contouring.
+
+Improved line detection meant line detection could occur throughout a play clip.
+First frame identification of Line of scrimmage correct.
+Players could be detected but! requires improvement to create meaningful statistics from such detections. 
+Field logo and NFL logo watermark were removed from detection
+Didnt have trained data to map output to specific formations/plays which would lead to creating datasets for analysis.
+And unable to utilise pytesseract to detect field numbers to create relative position in output.
+
+Yellow lines are the field markers and the line of scrimmage in the white.
+
+Here outputted.
+
+Player Detections and the head referee
+
+Unfiltered output of the player contour edges centroids.
+
+
+And references.
+
+ 
+

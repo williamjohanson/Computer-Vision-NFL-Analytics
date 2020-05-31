@@ -1,0 +1,3 @@
+- tess
+
+- If the difference in x values between the lines if 5 yards, can create relative?? Can maybe approximate with pixel width/height ratio to get the distances between players in both directions to plot...
